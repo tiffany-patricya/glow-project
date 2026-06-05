@@ -1,0 +1,120 @@
+/* TAMBAHAN FONT SILKSCREEN UNTUK EFEK PIXEL */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@700;800&family=Silkscreen&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+    --bg-purple: #dcd6f7; /* Ungu pastel dasar */
+    --hot-pink: #FF00FF;
+    --cyan: #00FFFF;
+    --yellow: #FFFF00;
+    --black: #000000;
+    --white: #FFFFFF;
+    --green: #39FF14;
+}
+
+body {
+    margin: 0; padding: 0; min-height: 100vh;
+    font-family: 'Space Mono', monospace; 
+    color: var(--black);
+    background-color: var(--bg-purple);
+    /* REPLIKA GRID DAN NEON GLOW PERSIS GAMBAR KANAN */
+    background-image: 
+        radial-gradient(circle at 25% 50%, rgba(255, 0, 255, 0.3) 0%, transparent 40%),
+        radial-gradient(circle at 75% 50%, rgba(0, 255, 255, 0.3) 0%, transparent 40%),
+        linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 30px 30px, 30px 30px;
+    background-attachment: fixed;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 40px; border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+.navbar .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; }
+.navbar .links a { margin-left: 20px; text-decoration: none; color: var(--black); font-weight: bold; }
+.navbar .links a:hover { color: var(--hot-pink); }
+
+/* RETRO WINDOW */
+.retro-window {
+    background-color: var(--white);
+    border: 4px solid var(--black);
+    box-shadow: 8px 8px 0px var(--black);
+    display: flex; flex-direction: column;
+}
+.window-titlebar {
+    background-color: var(--hot-pink); color: var(--white);
+    font-family: 'Space Mono', monospace; font-size: 0.85rem;
+    padding: 8px 12px; display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 4px solid var(--black); font-weight: bold;
+}
+.window-titlebar.bg-black { background-color: var(--black); color: var(--white); } 
+.window-titlebar.bg-pink { background-color: var(--hot-pink); color: var(--white); }
+.window-content { padding: 30px; }
+
+/* TYPOGRAPHY */
+.title-syne {
+    font-family: 'Syne', sans-serif; font-weight: 800;
+    text-transform: uppercase; font-size: 3.5rem; line-height: 1.1;
+    text-shadow: 4px 4px 0px var(--yellow); margin: 0 0 15px 0; letter-spacing: -1px;
+}
+.subtitle-syne {
+    font-family: 'Syne', sans-serif; font-weight: 800;
+    text-transform: uppercase; font-size: 1.8rem; margin: 0 0 20px 0;
+}
+
+/* INPUTS, SELECT, & BUTTONS (Y2K UPGRADE) */
+.y2k-input, .y2k-select {
+    border: 3px solid var(--black); 
+    padding: 12px; 
+    width: 100%;
+    font-family: 'Space Mono', monospace; 
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 15px; 
+    background-color: var(--white); 
+    outline: none;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+    transition: all 0.2s ease;
+}
+
+.y2k-input:focus, .y2k-select:focus {
+    background-color: #f8f8f8;
+    border-color: var(--hot-pink);
+    box-shadow: 4px 4px 0px var(--hot-pink);
+}
+
+.y2k-select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+    cursor: pointer;
+}
+
+.routine-label {
+    font-family: 'Silkscreen', cursive;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.y2k-btn {
+    border: 3px solid var(--black); padding: 12px; width: 100%;
+    font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.1rem;
+    text-transform: uppercase; cursor: pointer;
+    box-shadow: 4px 4px 0px var(--black); transition: transform 0.1s;
+    margin-top: 10px;
+}
+.y2k-btn:active { box-shadow: 0px 0px 0px var(--black); transform: translate(4px, 4px); }
+.btn-yellow { background-color: var(--yellow); color: var(--black); }
+.btn-green { background-color: var(--green); color: var(--black); }
+
+/* LAYOUT */
+.main-container { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
+.split-50 { display: flex; gap: 40px; align-items: center; justify-content: space-between; }
+.split-50 > div { flex: 1; }

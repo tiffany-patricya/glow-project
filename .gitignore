@@ -1,0 +1,28 @@
+# API Keys & Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+env/
+
+# Model files (kalau besar)
+*.h5
+*.pkl
+*.pt
+*.pth
+
+# PHP config
+config.php
+
+# OS
+.DS_Store
+Thumbs.db
+
+hash_gen.php
+temp_scan.txt
+temp_image.jpg
+debug_python_image.jpg
