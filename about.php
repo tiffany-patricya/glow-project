@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="static/css/style.css?v=<?php echo time(); ?>">
 </head>
 <body>
-
-<div class="navbar">
+    <div class="navbar">
         <div class="logo">GLOW.EXE</div>
         <div class="links">
             <a href="routine.php">Routine</a> 
@@ -16,9 +15,7 @@
             <a href="diary.php">Diary</a> 
             <a href="stash.php">Stash</a> 
             <a href="tips.php">Tips</a>
-            <a href="model.php">Scanner</a>
-            <!-- Tombol Logout kita kasih warna merah/pink biar mencolok! -->
-            <a href="logout.php" style="color: var(--hot-pink); font-weight: bold;">LOGOUT 🚪</a>
+            <a href="about.php" style="color:var(--hot-pink);">About</a>
         </div>
     </div>
 
@@ -31,18 +28,24 @@
 
                 <div style="display: flex; flex-direction: column; gap: 15px;">
                     <?php
-                    // Data statis anggota kelompok
+                    // Data statis anggota kelompok (ditambah key 'image' untuk letak file foto)
                     $team = [
-                        ['name' => 'Levizera Syalomita Passah', 'role' => 'Project Manager & UI/UX Designer', 'icon' => '🎀'],
-                        ['name' => 'Rehan Ibrahim', 'role' => 'Database Administrator', 'icon' => '🗄️'],
-                        ['name' => 'Excel Rechy Katuuk', 'role' => 'Backend & AI Developer', 'icon' => '🤖'],
-                        ['name' => 'Danielle Godwin Kawulusan', 'role' => 'Frontend Specialist', 'icon' => '💅'],
-                        ['name' => 'Christian Yohannes Lobo', 'role' => 'Quality Assurance & Tester', 'icon' => '🔎']
+                        ['name' => 'Levizera Sylomita Passah', 'role' => 'Frontend & AI lead', 'icon' => '🎀', 'image' => 'static/image/lepi.jpeg'],
+                        ['name' => 'Tiffany Patricya Laurelle Pondaag', 'role' => 'Backend Developer', 'icon' => '🗄️', 'image' => 'static/image/tip.jpeg'],
+                        ['name' => 'Myflower Nadine Pangemanan', 'role' => 'Technical Writer', 'icon' => '🤖', 'image' => 'static/image/abung.jpeg'],
+                        ['name' => 'Michelle Maria Michiko Sumuweng ', 'role' => 'Technical Writer', 'icon' => '😏', 'image' => 'static/image/kimich.jpeg'],
                     ];
 
                     foreach ($team as $idx => $member) {
                         echo '<div style="border: 3px solid var(--black); background: #f8f8f8; padding: 15px; box-shadow: 4px 4px 0 var(--black); display: flex; align-items: center; gap: 15px; transition: transform 0.2s;">';
+                        
+                        // Menampilkan Foto Profil
+                        echo '<img src="' . $member['image'] . '" alt="Foto ' . $member['name'] . '" style="width: 55px; height: 55px; object-fit: cover; border: 2px solid var(--black); border-radius: 4px; background-color: #eaeaea;">';
+                        
+                        // Menampilkan Icon Emoji bawaan kamu
                         echo '<div style="font-size: 2rem;">' . $member['icon'] . '</div>';
+                        
+                        // Menampilkan Nama dan Role
                         echo '<div>';
                         echo '<strong style="color: var(--hot-pink); font-family: \'Syne\', sans-serif; font-size: 1.2rem; text-transform: uppercase;">' . $member['name'] . '</strong>';
                         echo '<p style="margin: 5px 0 0 0; font-family: \'Space Mono\'; font-size: 0.9rem; font-weight: bold;">Role: ' . $member['role'] . '</p>';
@@ -61,3 +64,6 @@
     </div>
 </body>
 </html>
+
+
+
