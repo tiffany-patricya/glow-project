@@ -34,7 +34,7 @@
                     // Data statis anggota kelompok (ditambah key 'image' untuk letak file foto)
                     $team = [
                         ['name' => 'Levizera Sylomita Passah', 'role' => 'Frontend & AI lead', 'icon' => '🎀', 'image' => 'static/image/lepi.jpeg'],
-                        ['name' => 'Tiffany Patricya Laurelle Pondaag', 'role' => 'Backend Developer', 'icon' => '🗄️', 'image' => 'static/image/tip.jpeg'],
+                        ['name' => 'Tiffany Patricya Laurelle Pondaag', 'role' => 'Frontend & Backend Engineer', 'icon' => '🗄️', 'image' => 'static/image/tip.jpeg'],
                         ['name' => 'Myflower Nadine Pangemanan', 'role' => 'Technical Writer', 'icon' => '🤖', 'image' => 'static/image/abung.jpeg'],
                         ['name' => 'Michelle Maria Michiko Sumuweng ', 'role' => 'Technical Writer', 'icon' => '😏', 'image' => 'static/image/kimich.jpeg'],
                     ];

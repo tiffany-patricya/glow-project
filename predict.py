@@ -17,7 +17,7 @@ def main():
             raise Exception("File path argumen hilang!")
 
         image_input_path = sys.argv[1]
-        model_path = r"C:\xampp\htdocs\glow_exe\static\model\model.tflite"
+        model_path = r"C:\laragon\www\glow\static\model\model.tflite"
         
         if not os.path.exists(model_path):
             raise Exception(f"File model tidak ditemukan di: {model_path}")

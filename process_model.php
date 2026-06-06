@@ -1,7 +1,7 @@
 <?php
-// Path ke Python (Pastikan ini sesuai dengan folder venv_stable kamu!)
-$python_path = "C:\\xampp\\htdocs\\glow_exe\\venv_stable\\Scripts\\python.exe"; 
-$script_path = "C:\\xampp\\htdocs\\glow_exe\\predict.py";
+// Path ke Python (Sudah diupdate ke Laragon!)
+$python_path = "C:\\laragon\\www\\glow\\venv_stable\\Scripts\\python.exe"; 
+$script_path = "C:\\laragon\\www\\glow\\predict.py";
 
 // Cek apakah file python ada
 if (!file_exists($python_path)) {
@@ -16,7 +16,7 @@ $command = escapeshellcmd("$python_path $script_path temp_scan.txt 2>&1");
 $output = [];
 exec($command, $output, $return_code);
 
-// Kirim balik output (sekarang kita bisa lihat errornya!)
+// Kirim balik output
 if ($return_code !== 0) {
     echo json_encode(["classification" => "Error Python", "confidence" => "0%", "solusi" => implode("<br>", $output)]);
 } else {
