@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <hr style="border: 1px dashed var(--black); margin: 20px 0;">
 <a href="about.php" style="text-decoration: none;">
-    <button type="button" class="y2k-btn btn-cyan" style="font-size: 0.85rem; margin-top: 0;">📂 INFO ANGGOTA</button>
+    <button type="button" class="y2k-btn btn-cyan" style="font-size: 0.85rem; margin-top: 0;">📂 ABOUT US </button>
 </a>
                     </p>
                 </div>
