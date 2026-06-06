@@ -37,16 +37,16 @@ if ($total_days > 0) {
 
 // Pesan motivasi berdasarkan streak
 if ($streak == 0) {
-    $pesan = "Yuk mulai isi diary hari ini buat ngebangun streak kamu! 🚀";
+    $pesan = "Yuk mulai isi diary hari ini buat ngebangun streak kamu! ";
     $color = "var(--hot-pink)";
 } elseif ($streak < 3) {
-    $pesan = "Baru mulai nih! Pertahankan terus ya bestie! 💪";
+    $pesan = "Baru mulai nih! Pertahankan terus ya bestie! ";
     $color = "var(--yellow)";
 } elseif ($streak < 7) {
-    $pesan = "Hari konsisten merawat skin barrier! Keep it up! 💅✨";
+    $pesan = "Hari konsisten merawat skin barrier! Keep it up! ";
     $color = "var(--cyan)";
 } else {
-    $pesan = "LEGEND! $streak hari berturut-turut! Skin barrier kamu pasti kuat banget! 👑";
+    $pesan = "LEGEND! $streak hari berturut-turut! Skin barrier kamu pasti kuat banget! ";
     $color = "var(--green)";
 }
 ?>
@@ -108,7 +108,7 @@ if ($streak == 0) {
                 <?php endif; ?>
                 
                 <a href="diary.php" style="text-decoration: none;">
-                    <button class="y2k-btn btn-yellow">➡ LANJUT ISI DIARY 📝</button>
+                    <button class="y2k-btn btn-yellow">➡ LANJUT ISI DIARY </button>
                 </a>
             </div>
         </div>
