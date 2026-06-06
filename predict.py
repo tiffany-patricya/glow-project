@@ -57,13 +57,13 @@ def main():
         # Penulisan solusi dibuat 1 baris per list agar 100% aman dari Syntax Error
         # Solusi versi Plain Text (Aman dari bentrok tag HTML)
         solusi = [
-            "✨ AI Skincare Plan: Ringan (Mild) | 🧪 Hero Ingredients: Salicylic Acid (BHA), Niacinamide, Centella Asiatica. | 🧴 Action Plan: Gunakan sabun cuci muka gentle. Pakai BHA maksimal 2x seminggu. Pilih pelembap bertekstur gel dan wajib Sunscreen Non-Comedogenic!",
+            " AI Skincare Plan: Ringan (Mild) |  Hero Ingredients: Salicylic Acid (BHA), Niacinamide, Centella Asiatica. |  Action Plan: Gunakan sabun cuci muka gentle. Pakai BHA maksimal 2x seminggu. Pilih pelembap bertekstur gel dan wajib Sunscreen Non-Comedogenic!",
             
-            "✨ AI Skincare Plan: Sedang (Moderate) | 🧪 Hero Ingredients: Benzoyl Peroxide, AHA/BHA, Tea Tree Oil. | 🧴 Action Plan: Totolkan obat jerawat (Benzoyl Peroxide) HANYA di titik jerawat pada malam hari. Gunakan serum Calming (Centella/Mugwort). Fokus ke pelembap Ceramide.",
+            " AI Skincare Plan: Sedang (Moderate) |  Hero Ingredients: Benzoyl Peroxide, AHA/BHA, Tea Tree Oil. |  Action Plan: Totolkan obat jerawat (Benzoyl Peroxide) HANYA di titik jerawat pada malam hari. Gunakan serum Calming (Centella/Mugwort). Fokus ke pelembap Ceramide.",
             
-            "✨ AI Skincare Plan: Parah (Severe) | 🧪 Hero Ingredients: Retinoid (Adapalene), Azelaic Acid. | 🧴 Action Plan: Mulai perkenalkan Retinoid dari konsentrasi terendah (Night Routine). Jangan digabung AHA/BHA. Hindari physical scrub sama sekali!",
+            " AI Skincare Plan: Parah (Severe) |  Hero Ingredients: Retinoid (Adapalene), Azelaic Acid. |  Action Plan: Mulai perkenalkan Retinoid dari konsentrasi terendah (Night Routine). Jangan digabung AHA/BHA. Hindari physical scrub sama sekali!",
             
-            "🚨 AI Medical Alert: Sangat Parah (Very Severe) | 🧪 Rekomendasi Medis: Pengobatan Resep Dokter. | 🧴 Action Plan: Stop pemakaian bahan aktif bebas (AHA/BHA/Retinol). Kembali ke Basic Skincare. AI mendeteksi inflamasi tinggi, segera konsultasikan ke Dokter Kulit (Sp.D.V.E)!"
+            " AI Medical Alert: Sangat Parah (Very Severe) |  Rekomendasi Medis: Pengobatan Resep Dokter. |  Action Plan: Stop pemakaian bahan aktif bebas (AHA/BHA/Retinol). Kembali ke Basic Skincare. AI mendeteksi inflamasi tinggi, segera konsultasikan ke Dokter Kulit (Sp.D.V.E)!"
         ]
         
         result = {
