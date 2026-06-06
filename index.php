@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         exit;
     } else {
-        $error = "Username atau Password salah! 💔";
+        $error = "Username atau Password salah! ";
     }
 }
 ?>
@@ -48,11 +48,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="main-container split-50">
         <!-- Kiri: Teks Estetik -->
         <div class="hero-text">
-            <h1 class="title-syne">YOUR<br>GLOW UP<br>ERA. ✨</h1>
+            <h1 class="title-syne">YOUR<br>GLOW UP<br>ERA. !</h1>
             <div class="retro-window" style="background-color: #E8E4F8; box-shadow: 6px 6px 0px var(--black);">
                 <div class="window-content" style="padding: 20px; font-weight: bold; font-size: 0.95rem; line-height: 1.6;">
                     <p style="margin-top:0;">No more gatekeeping your own glow up! 💅</p>
-                    <p style="margin-bottom:0;">Web app ini buat nge-track AM/PM routine kamu, flex consistency streak, dan dump skin mood kamu di satu vault yang aesthetic parah. Biar skin barrier tetep slay dan kamu otomatis masuk anti-breakout club. Periodt. 🎀</p>
+                    <p style="margin-bottom:0;">Web app ini buat nge-track AM/PM routine kamu, flex consistency streak, dan dump skin mood kamu di diary. Biar skin barrier tetep slay dan kamu otomatis masuk anti-breakout club. Periodt. 🎀</p>
                 </div>
             </div>
         </div>
