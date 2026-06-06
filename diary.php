@@ -97,11 +97,11 @@ if (isset($_GET['edit'])) {
                     <input type="hidden" name="edit_id" value="<?php echo $edit_data ? $edit_data['id'] : ''; ?>">
                     
                     <select name="mood" class="y2k-select" required>
-                        <option value="Glowing ✨" <?php echo ($edit_data && $edit_data['mood'] == 'Glowing ✨') ? 'selected' : ''; ?>>Glowing ✨</option>
-                        <option value="Breakout 🚨" <?php echo ($edit_data && $edit_data['mood'] == 'Breakout 🚨') ? 'selected' : ''; ?>>Breakout 🚨</option>
-                        <option value="Dry/Flaky 🌵" <?php echo ($edit_data && $edit_data['mood'] == 'Dry/Flaky 🌵') ? 'selected' : ''; ?>>Dry/Flaky 🌵</option>
-                        <option value="Normal 😊" <?php echo ($edit_data && $edit_data['mood'] == 'Normal 😊') ? 'selected' : ''; ?>>Normal 😊</option>
-                        <option value="Oily 💦" <?php echo ($edit_data && $edit_data['mood'] == 'Oily 💦') ? 'selected' : ''; ?>>Oily 💦</option>
+                        <option value="Glowing " <?php echo ($edit_data && $edit_data['mood'] == 'Glowing ') ? 'selected' : ''; ?>>Glowing </option>
+                        <option value="Breakout " <?php echo ($edit_data && $edit_data['mood'] == 'Breakout ') ? 'selected' : ''; ?>>Breakout </option>
+                        <option value="Dry/Flaky " <?php echo ($edit_data && $edit_data['mood'] == 'Dry/Flaky ') ? 'selected' : ''; ?>>Dry/Flaky </option>
+                        <option value="Normal " <?php echo ($edit_data && $edit_data['mood'] == 'Normal ') ? 'selected' : ''; ?>>Normal </option>
+                        <option value="Oily " <?php echo ($edit_data && $edit_data['mood'] == 'Oily ') ? 'selected' : ''; ?>>Oily </option>
                     </select>
                     
                     <textarea name="note" class="y2k-input" rows="5" placeholder="Ceritain kondisi kulit kamu hari ini..." required style="resize: none;"><?php 
