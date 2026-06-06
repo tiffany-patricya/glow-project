@@ -15,8 +15,11 @@
             <a href="diary.php">Diary</a> 
             <a href="stash.php">Stash</a> 
             <a href="tips.php">Tips</a>
-            <a href="about.php" style="color:var(--hot-pink);">About</a>
+            <a href="model.php">Scanner</a>
+            <!-- Tombol Logout kita kasih warna merah/pink biar mencolok! -->
+            <a href="logout.php" style="color: var(--hot-pink); font-weight: bold;">LOGOUT 🚪</a>
         </div>
+    </div>
     </div>
 
     <div class="main-container">
